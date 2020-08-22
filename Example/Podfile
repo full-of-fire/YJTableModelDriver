@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YJTableModelDriver_Example' do
+  pod 'YJTableModelDriver', :path => '../'
+
+  target 'YJTableModelDriver_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
