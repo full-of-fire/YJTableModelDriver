@@ -1,16 +1,16 @@
 PODS:
-  - YJTableModelDriver (0.1.0)
+  - YJTableModelDriver (1.0.0)
 
 DEPENDENCIES:
-  - YJTableModelDriver (from `../`)
+  - YJTableModelDriver
 
-EXTERNAL SOURCES:
-  YJTableModelDriver:
-    :path: "../"
+SPEC REPOS:
+  trunk:
+    - YJTableModelDriver
 
 SPEC CHECKSUMS:
-  YJTableModelDriver: 665cba7b7100a65e28862b34b00a4e7a7dfe6258
+  YJTableModelDriver: 5a620374597dd665604598b1208b87c9c363c966
 
-PODFILE CHECKSUM: 38d0a010b53f5522b3b4a7a8694823ab1169a1b2
+PODFILE CHECKSUM: 3e41ef7f6c207de2de46e4a0963a5f846081d67c
 
 COCOAPODS: 1.9.3
