@@ -64,8 +64,8 @@ extension YJTableModelDriver: UITableViewDelegate {
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        guard let row = row(indexPath: indexPath) else { return UITableViewAutomaticDimension }
-        guard let heightBlock = row.cellHeight else { return UITableViewAutomaticDimension }
+        guard let row = row(indexPath: indexPath) else { return UITableView.automaticDimension }
+        guard let heightBlock = row.cellHeight else { return UITableView.automaticDimension }
         return heightBlock()
     }
     
@@ -76,9 +76,9 @@ extension YJTableModelDriver: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         guard let sectionModel = self.section(section: section) else {
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         }
-        return sectionModel.headerViewHeight?(tableView,section) ?? UITableViewAutomaticDimension
+        return sectionModel.headerViewHeight?(tableView,section) ?? UITableView.automaticDimension
     }
     
     public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -88,9 +88,9 @@ extension YJTableModelDriver: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         guard let sectionModel = self.section(section: section) else {
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         }
-        return sectionModel.footerViewHeight?(tableView,section) ?? UITableViewAutomaticDimension
+        return sectionModel.footerViewHeight?(tableView,section) ?? UITableView.automaticDimension
     }
     
 }

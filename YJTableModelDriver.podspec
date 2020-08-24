@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YJTableModelDriver'
-  s.version          = '1.0.0'
-  s.summary          = '基于数据驱动的Tableview封装'
+  s.version          = '1.0.2'
+  s.summary          = '基于数据驱动的Tableview'
+  s.swift_version    = '4.2'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = ''
+  s.description      = '基于数据驱动的Tableview封装'
 
   s.homepage         = 'https://github.com/full-of-fire/YJTableModelDriver'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
