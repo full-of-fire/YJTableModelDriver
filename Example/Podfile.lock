@@ -1,0 +1,16 @@
+PODS:
+  - YJTableModelDriver (0.1.0)
+
+DEPENDENCIES:
+  - YJTableModelDriver (from `../`)
+
+EXTERNAL SOURCES:
+  YJTableModelDriver:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YJTableModelDriver: 665cba7b7100a65e28862b34b00a4e7a7dfe6258
+
+PODFILE CHECKSUM: 38d0a010b53f5522b3b4a7a8694823ab1169a1b2
+
+COCOAPODS: 1.9.3

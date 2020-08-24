@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1CDE21F9676AE95CE6B9D384 /* Pods_YJTableModelDriver_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5985214CB902AFB97C346C9C /* Pods_YJTableModelDriver_Example.framework */; };
+		48DB56CE24F2870C009A6958 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DB56CD24F2870C009A6958 /* Row.swift */; };
+		48DB56D024F28C11009A6958 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DB56CF24F28C11009A6958 /* Section.swift */; };
+		48DB56D324F28E8E009A6958 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DB56D124F28E8E009A6958 /* MyTableViewCell.swift */; };
+		48DB56D424F28E8E009A6958 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48DB56D224F28E8E009A6958 /* MyTableViewCell.xib */; };
+		48DB56D724F28FC9009A6958 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DB56D524F28FC9009A6958 /* TestTableViewCell.swift */; };
+		48DB56D824F28FC9009A6958 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48DB56D624F28FC9009A6958 /* TestTableViewCell.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,6 +36,12 @@
 /* Begin PBXFileReference section */
 		1CF2AD5684D66EAB0EDD60E6 /* Pods-YJTableModelDriver_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJTableModelDriver_Example.debug.xcconfig"; path = "Target Support Files/Pods-YJTableModelDriver_Example/Pods-YJTableModelDriver_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3DE3730C8A8F0D5837F9C9CC /* Pods_YJTableModelDriver_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJTableModelDriver_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48DB56CD24F2870C009A6958 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		48DB56CF24F28C11009A6958 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		48DB56D124F28E8E009A6958 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		48DB56D224F28E8E009A6958 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		48DB56D524F28FC9009A6958 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		48DB56D624F28FC9009A6958 /* TestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
 		5985214CB902AFB97C346C9C /* Pods_YJTableModelDriver_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJTableModelDriver_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* YJTableModelDriver_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJTableModelDriver_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,12 +53,12 @@
 		607FACE51AFB9204008FA782 /* YJTableModelDriver_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJTableModelDriver_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		86628E94AB75736B4079B433 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		86628E94AB75736B4079B433 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8A41832B3B9EBFA267878FB0 /* Pods-YJTableModelDriver_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJTableModelDriver_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YJTableModelDriver_Tests/Pods-YJTableModelDriver_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B59FDD40DD67479AC8EDF01 /* Pods-YJTableModelDriver_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJTableModelDriver_Example.release.xcconfig"; path = "Target Support Files/Pods-YJTableModelDriver_Example/Pods-YJTableModelDriver_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A86C283E6EC730464DFE3F3D /* YJTableModelDriver.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YJTableModelDriver.podspec; path = ../YJTableModelDriver.podspec; sourceTree = "<group>"; };
+		A86C283E6EC730464DFE3F3D /* YJTableModelDriver.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YJTableModelDriver.podspec; path = ../YJTableModelDriver.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E2848CD5D647EA0C4C83E892 /* Pods-YJTableModelDriver_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJTableModelDriver_Tests.release.xcconfig"; path = "Target Support Files/Pods-YJTableModelDriver_Tests/Pods-YJTableModelDriver_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FF6BF61E9AD49360EC1BF0A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FF6BF61E9AD49360EC1BF0A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,12 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				48DB56D124F28E8E009A6958 /* MyTableViewCell.swift */,
+				48DB56D224F28E8E009A6958 /* MyTableViewCell.xib */,
+				48DB56D524F28FC9009A6958 /* TestTableViewCell.swift */,
+				48DB56D624F28FC9009A6958 /* TestTableViewCell.xib */,
+				48DB56CD24F2870C009A6958 /* Row.swift */,
+				48DB56CF24F28C11009A6958 /* Section.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,7 +174,6 @@
 				8A41832B3B9EBFA267878FB0 /* Pods-YJTableModelDriver_Tests.debug.xcconfig */,
 				E2848CD5D647EA0C4C83E892 /* Pods-YJTableModelDriver_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +244,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				48DB56D424F28E8E009A6958 /* MyTableViewCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				48DB56D824F28FC9009A6958 /* TestTableViewCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				48DB56D024F28C11009A6958 /* Section.swift in Sources */,
+				48DB56CE24F2870C009A6958 /* Row.swift in Sources */,
+				48DB56D324F28E8E009A6958 /* MyTableViewCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				48DB56D724F28FC9009A6958 /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

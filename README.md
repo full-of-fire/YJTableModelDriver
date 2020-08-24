@@ -7,7 +7,44 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+1. To run the example project, clone the repo, and run `pod install` from the Example directory first.
+2. `Row`实现`RowConvertable`协议 ，`Section`实现`SectionConvertable`协议
+``` swift
+ let row1 = Row.nibRow(cellClass: MyTableViewCell.self)
+ row1.didSelectAt { (table, index) in
+     print("index = \(index.row)")
+ }
+ 
+ row1.tableHeight { () -> CGFloat in
+     return 100
+ }
+ let row2 = Row.nibRow(cellClass: TestTableViewCell.self)
+ 
+ let section = Section(rows: [row1,row2])
+ section.tableHeaderView { (_, _) -> UIView? in
+     let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 100))
+     view.backgroundColor = UIColor.red
+     return view
+ }
+ section.tableHeaderViewHeight { (_, _) -> CGFloat in
+     return 100
+ }
+
+ //初始化
+ let modelDriver = YJTableModelDriver(sections: [section])
+ tableView.modelDriver = modelDriver
+
+```
+2. `UITableViewCell`数据绑定，需要实现`BindCellableProtocol`协议
+```swift
+class TestTableViewCell: UITableViewCell,BindCellableProtocol {
+    
+    func bindViewWithData(data: Any) {
+        guard let row = data as? Row else { return }
+        print(row)
+    }
+}
+```
 
 ## Requirements
 
@@ -22,7 +59,7 @@ pod 'YJTableModelDriver'
 
 ## Author
 
-full-of-fire, yangjie43606@gmail.com
+full-of-fire, 591730822@qq.com
 
 ## License
 
